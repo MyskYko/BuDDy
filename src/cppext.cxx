@@ -34,6 +34,7 @@
   AUTH:  Jorn Lind
   DATE:  (C) august 1997
 *************************************************************************/
+#if 0
 #include <string.h>
 #include <stdlib.h>
 #include <iomanip>
@@ -620,5 +621,5 @@ ostream &operator<<(ostream &o, const bvec &v)
 
   return o;
 }
-
+#endif
 /* EOF */

@@ -42,7 +42,7 @@
 
    /* Allow this headerfile to define C++ constructs if requested */
 #ifdef __cplusplus
-#define CPLUSPLUS
+//#define CPLUSPLUS
 #endif
 
 #include <stdio.h>
