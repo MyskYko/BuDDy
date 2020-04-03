@@ -41,7 +41,7 @@
 #include "bvec.h"
 
 using namespace std;
-
+namespace Buddy {
    /* Formatting objects for iostreams */
 #define IOFORMAT_SET    0
 #define IOFORMAT_TABLE  1
@@ -620,5 +620,5 @@ ostream &operator<<(ostream &o, const bvec &v)
 
   return o;
 }
-
+}
 /* EOF */

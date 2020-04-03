@@ -45,6 +45,7 @@
 
 
 #ifdef CPLUSPLUS
+namespace Buddy {
 extern "C" {
 #endif
 
@@ -359,6 +360,7 @@ extern int  fdd_setpairs(bddPair*, int*, int*, int);
 
 #ifdef CPLUSPLUS
 }
+}
 #endif
 
 /*************************************************************************
@@ -366,6 +368,7 @@ extern int  fdd_setpairs(bddPair*, int*, int*, int);
    classes, wrappers and hacks are supplied.
 *************************************************************************/
 #ifdef CPLUSPLUS
+namespace Buddy {
 
    /* FDD extensions */
 
@@ -449,7 +452,7 @@ inline bdd fdd_neq(int bitnum, bdd *left, bdd *right)
 #define fdd_con fdd_conpp
 #define fdd_var fdd_varpp
 
-
+}
 #endif /* CPLUSPLUS */
 
 #endif /* _FDD_H */

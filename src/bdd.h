@@ -167,6 +167,7 @@ typedef struct s_bddCacheStat
   /* In file "kernel.c" */
 
 #ifdef CPLUSPLUS
+namespace Buddy {
 extern "C" {
 #endif
 
@@ -2006,6 +2007,7 @@ extern void     bdd_fprintorder(FILE *ofile);
 
 #ifdef CPLUSPLUS
 }
+}
 #endif
 
 
@@ -2090,7 +2092,7 @@ extern const BDD bddtrue;
 #include <iostream>
 
 /*=== User BDD class ===================================================*/
-
+namespace Buddy {
 class bvec;
 
 class bdd
@@ -2496,7 +2498,7 @@ extern bdd_ioformat fddset;
 typedef void (*bddstrmhandler)(std::ostream &, int);
 
 extern bddstrmhandler bdd_strm_hook(bddstrmhandler);
-
+}
 #endif /* CPLUSPLUS */
 
 #endif /* _BDD_H */

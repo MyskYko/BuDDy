@@ -64,6 +64,7 @@ typedef BVEC bvec;
 
 
 #ifdef CPLUSPLUS
+namespace Buddy {
 extern "C" {
 #endif
    
@@ -503,6 +504,7 @@ extern BDD  bvec_neq(BVEC left, BVEC right);
 
 #ifdef CPLUSPLUS
 }
+}
 #endif
 
 
@@ -511,7 +513,7 @@ extern BDD  bvec_neq(BVEC left, BVEC right);
    classes, wrappers and hacks are supplied.
 *************************************************************************/
 #ifdef CPLUSPLUS
-
+namespace Buddy {
 /*=== User BVEC class ==================================================*/
 
 class bvec
@@ -682,7 +684,7 @@ inline bdd  bvec_neq(const bvec &left, const bvec &right)
 #define bvec_false(a)    bvec_falsepp(a)
 #define bvec_con(a,b)    bvec_conpp((a),(b))
 
-   
+}
 #endif /* CPLUSPLUS */
 
 #endif /* _BVEC_H */
